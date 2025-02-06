@@ -3,4 +3,9 @@ public class Candy {
     public Candy(String f) {
         flavor = f;
     }
+
+    public String toString()
+    {
+        return flavor;
+    }
 }
