@@ -27,7 +27,7 @@ public class BoxOfCandy{
             {
                 s += box[row][col] + " ";
             }
-            s+= "/n";
+            s+= "\n";
         }
         return s;
     }
