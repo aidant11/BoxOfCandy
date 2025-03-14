@@ -8,4 +8,9 @@ public class Candy {
     {
         return flavor;
     }
+
+     public String getFlavor() 
+    {
+        return flavor;
+    }
 }

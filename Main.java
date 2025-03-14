@@ -8,5 +8,25 @@ public class Main {
         box[3][2] = new Candy("grape");
         BoxOfCandy b = new BoxOfCandy(box);
         System.out.println(b);
-    }
+        b.moveCandyToFirstRow(2);
+        System.out.println(b);
+        box = new Candy[3][5];
+        box[0][0] = new Candy("lime");
+        box[0][1] = new Candy("lime");
+        box[0][3] = new Candy("lemon");
+        box[1][0] = new Candy("orange");
+        box[1][3] = new Candy("lime");
+        box[1][4] = new Candy("lime");
+        box[2][0] = new Candy("cherry");
+        box[2][2] = new Candy("lemon");
+        box[0][4] = new Candy("orange");
+        BoxOfCandy d = new BoxOfCandy(box);
+        System.out.println(d);
+        System.out.println(d.removeNextByFlavor("cherry"));
+        System.out.println(d);
+        System.out.println(d.removeNextByFlavor("lime"));
+        System.out.println(d);
+        System.out.println(d.removeNextByFlavor("grape"));
+        System.out.println(d);
+     }
 }
